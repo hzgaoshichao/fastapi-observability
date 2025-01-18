@@ -11,7 +11,7 @@ extensions:
   health_check: {}
 exporters:
   otlp:
-    endpoint: tempo:4317
+    endpoint: tempo:14317
     tls:
       insecure: true
   prometheus:
