@@ -27,7 +27,7 @@ services:
       - loki
     environment:
       APP_NAME: "app-a"
-      OTLP_GRPC_ENDPOINT: "http://otel-collector:4318"
+      OTLP_GRPC_ENDPOINT: "http://otel-collector:4317"
     logging: *default-logging
 
   app-b:
@@ -39,7 +39,7 @@ services:
       - loki
     environment:
       APP_NAME: "app-b"
-      OTLP_GRPC_ENDPOINT: "http://otel-collector:4318"
+      OTLP_GRPC_ENDPOINT: "http://otel-collector:4317"
     logging: *default-logging
 
   app-c:
@@ -51,7 +51,7 @@ services:
       - loki
     environment:
       APP_NAME: "app-c"
-      OTLP_GRPC_ENDPOINT: "http://otel-collector:4318"
+      OTLP_GRPC_ENDPOINT: "http://otel-collector:4317"
     logging: *default-logging
 
   prometheus:
