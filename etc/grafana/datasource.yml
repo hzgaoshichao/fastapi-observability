@@ -35,13 +35,14 @@ datasources:
     type: tempo
     typeName: Tempo
     access: proxy
-    url: http://tempo
+    url: http://tempo:3200
     password: ''
     user: ''
     database: ''
     basicAuth: false
     isDefault: false
     jsonData:
+      httpHeaderName1: 'x-scope-orgid'
       nodeGraph:
         enabled: true
       search:
@@ -55,6 +56,8 @@ datasources:
         mapTagNamesEnabled: false
         tags:
           - compose_service
+    secureJsonData:
+      httpHeaderValue1: 'msi'
     readOnly: false
     editable: true
   - uid: loki

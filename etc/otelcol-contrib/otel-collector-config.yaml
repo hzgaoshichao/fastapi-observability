@@ -14,6 +14,8 @@ exporters:
     endpoint: "tempo:4317"
     tls:
       insecure: true
+    headers:
+      x-scope-orgid: msi
   prometheus:
     endpoint: "0.0.0.0:8889"
 service:

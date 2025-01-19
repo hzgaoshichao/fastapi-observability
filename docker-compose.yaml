@@ -39,6 +39,7 @@ services:
     ports:
       - "4317" # OTLP gRPC
       - "4318" # OTLP HTTP
+      - "3200" # grafana use to query
     depends_on:
       - init
       - loki
